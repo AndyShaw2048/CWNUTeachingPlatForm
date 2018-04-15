@@ -7,11 +7,12 @@ use Illuminate\Http\Request;
 class SYGLController extends Controller
 {
     //实验管理模块由肖勇负责
-    public function index(){
-        return view('SYGL.index');
+    public function SYSC(){
+        return view('SYGL.SYSC');
     }
 
-    public function postTest(Request $request)
+    //文件上传
+    public function uploadExperiment(Request $request)
     {
         return response()->json(array([
                                           'status' => 'success',

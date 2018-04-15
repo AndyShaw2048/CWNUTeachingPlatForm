@@ -2,6 +2,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="_token" content="{{ csrf_token() }}"/>
   <title>西华师范大学教学管理系统</title>
   <link rel="stylesheet" href="/layui/css/layui.css">
   <link rel="stylesheet" type="text/css" href="/css/global.css">
@@ -63,7 +64,16 @@
         </li>
         <li class="layui-nav-item"><a href="javascript:loadView('XQSZ');">学期设置</a></li>
         <li class="layui-nav-item"><a href="javascript:loadView('JXPG');">教学评估</a></li>
-        <li class="layui-nav-item"><a href="javascript:loadView('SYGL');">实验管理</a></li>
+        <li class="layui-nav-item">
+            <a href="javascript:;">实验管理</a>
+            <dl class="layui-nav-child">
+                <dd><a href="javascript:loadView('SYSC');">上传实验报告</a></dd>
+                <dd><a href="javascript:loadView('SYPY');">批阅实验报告</a></dd>
+                <dd><a href="javascript:loadView('SYDJ');">实验报告登记</a></dd>
+                <dd><a href="javascript:loadView('SYCX');">实验登记查询</a></dd>
+                <dd><a href="javascript:loadView('SYTJ');">实验报告统计</a></dd>
+            </dl>
+        </li>
         <li class="layui-nav-item"><a href="javascript:loadView('ZYTZ');">专业调整</a></li>
         <li class="layui-nav-item"><a href="javascript:loadView('BYGL');">毕业管理</a></li>
       </ul>

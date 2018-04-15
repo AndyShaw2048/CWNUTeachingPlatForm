@@ -22,5 +22,5 @@ Route::get('/login',"mainController@login");
 Route::get('/XKGL',"KCGLController@XKGL");
 
 //实验管理（肖勇）
-Route::get('/SYGL',"SYGLController@index");
-Route::post('/postTest','SYGLController@postTest');
+Route::get('/SYSC',"SYGLController@SYSC");
+Route::post('/SYSC','SYGLController@uploadExperiment');
